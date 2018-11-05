@@ -1,0 +1,18 @@
+{
+    "name": "@batfink/foobar",
+    "main": "dist/Foobar.js",
+    "module": "Foobar.jsx",
+    "version": "1.0.0",
+    "license": "MIT",
+    "scripts": {
+        "prepare": "yarn build",
+        "clean": "rimraf dist && mkdir dist",
+        "bundle": "rollup -c",
+        "build": "npm-run-all clean bundle"
+    },
+    "peerDependencies": {
+        "react": "^16.6.0",
+        "react-dom": "^16.6.0",
+        "styled-components": "^4.0.3"
+    }
+}

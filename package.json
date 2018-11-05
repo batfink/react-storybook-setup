@@ -1,0 +1,87 @@
+{
+    "name": "batfink-react-storybook-setup",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:batfink/react-storybook-setup",
+    "author": "Victor Nystad <vnystad@gmail.com>",
+    "license": "MIT",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "start": "start-storybook -p 9002",
+        "build": "build-storybook -o docs",
+        "lerna": "lerna",
+        "commitmsg": "commitlint -E GIT_PARAMS",
+        "pub": "lerna publish",
+        "clean": "lerna clean",
+        "lint:js": "eslint --ext js,jsx packages",
+        "lint:css": "stylelint \"packages/**/*.jsx\"",
+        "test": "jest",
+        "test:generate-output": "jest --json --outputFile=jest-test-results.json"
+    },
+    "lerna": {
+        "version": "independent",
+        "npmClient": "yarn",
+        "useWorkspaces": true,
+        "command": {
+            "publish": {
+                "conventionalCommits": true,
+                "allowBranch": "master",
+                "message": "chore(release): publish"
+            }
+        }
+    },
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
+    },
+    "jest": {
+        "verbose": true
+    },
+    "devDependencies": {
+        "@babel/core": "^7.1.2",
+        "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+        "@babel/preset-env": "^7.1.0",
+        "@babel/preset-react": "^7.0.0",
+        "@commitlint/cli": "^7.2.1",
+        "@commitlint/config-conventional": "^7.1.2",
+        "@storybook/addon-info": "^4.0.2",
+        "@storybook/addon-jest": "^4.0.2",
+        "@storybook/react": "^4.0.2",
+        "babel-eslint": "^10.0.1",
+        "babel-loader": "^8.0.4",
+        "eslint": "^5.8.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-jsx-a11y": "^6.1.2",
+        "eslint-plugin-react": "^7.11.1",
+        "husky": "^1.1.3",
+        "jest": "^23.6.0",
+        "lerna": "^3.4.3",
+        "npm-run-all": "^4.1.3",
+        "polished": "^2.3.0",
+        "prop-types": "^15.6.2",
+        "react": "^16.6.0",
+        "react-dom": "^16.6.0",
+        "rimraf": "^2.6.2",
+        "rollup": "^0.67.0",
+        "rollup-plugin-babel": "^4.0.3",
+        "rollup-plugin-commonjs": "^9.2.0",
+        "rollup-plugin-node-resolve": "^3.4.0",
+        "rollup-plugin-peer-deps-external": "^2.2.0",
+        "rollup-plugin-replace": "^2.1.0",
+        "rollup-plugin-uglify": "^6.0.0",
+        "styled-components": "^4.0.3",
+        "stylelint": "^9.7.1",
+        "stylelint-config-recommended": "^2.1.0",
+        "stylelint-config-styled-components": "^0.1.1",
+        "stylelint-custom-processor-loader": "^0.5.0",
+        "stylelint-processor-styled-components": "^1.5.0"
+    },
+    "peerDependencies": {
+        "babel-core": "6.x || ^7.0.0-bridge.0"
+    }
+}
