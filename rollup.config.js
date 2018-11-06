@@ -29,7 +29,7 @@ export default {
             include: 'node_modules/**',
         }),
     ],
-    external: ['react', 'react-dom', 'prop-types', 'stream'],
+    external: ['react', 'react-dom', 'prop-types', 'styled-components'],
     output: {
         format: 'cjs',
     },
