@@ -14,6 +14,15 @@ export default {
             'process.env.NODE_ENV': JSON.stringify('production'),
         }),
         babel({
+            babelrc: false,
+            presets: [
+                '@babel/preset-env',
+                '@babel/preset-react',
+            ],
+            plugins: [
+                'styled-components',
+                '@babel/plugin-proposal-object-rest-spread',
+            ],
             exclude: 'node_modules/**',
         }),
         commonjs({

@@ -2,6 +2,7 @@
 extends:
     # use airbnb instead of airbnb-base to include react
     - "airbnb"
+    - "plugin:jest/recommended"
 
 env:
     browser: true
