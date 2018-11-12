@@ -21,12 +21,15 @@ const Wrapper = styled.div`
     height: 100vh;
 `
 
+stories.addParameters({ jest: ['Foobar'] })
+
 stories.addDecorator(story => (
     <Wrapper>
         <GlobalStyle />
         { story() }
     </Wrapper>
 ))
+
 
 stories
     .add('Default', () => (
@@ -38,3 +41,7 @@ stories
     .add('With style', () => (
         <Foobar style={ { color: moss } }>Some text</Foobar>
     ))
+    .add(
+        'Test results',
+        () => <div>Jest results in storybook</div>,
+    )

@@ -8,7 +8,7 @@ const Foobar = styled.div`
     font-size: 1.125rem;
 
     .baz {
-        background: lime;
+        background: orange;
     }
 `
 

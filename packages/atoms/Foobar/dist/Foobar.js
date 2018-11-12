@@ -8,6 +8,6 @@ var styled = _interopDefault(require('styled-components'));
 var Foobar = styled.div.withConfig({
   displayName: "Foobar",
   componentId: "jdw10h-0"
-})(["display:grid;grid-gap:0.25rem;font-weight:500;font-size:1.125rem;.baz{background:lime;}"]);
+})(["display:grid;grid-gap:0.25rem;font-weight:500;font-size:1.125rem;.baz{background:orange;}"]);
 
 module.exports = Foobar;

@@ -1,4 +1,4 @@
-import base from '../../rollup.config'
+import base from '../../../rollup.config'
 import pkg from './package.json'
 
 const dest = pkg.main.split('/')
