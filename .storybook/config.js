@@ -1,7 +1,10 @@
 import { configure, addDecorator } from '@storybook/react'
-// import withInfo from '@storybook/addon-info'
+import { withTests } from '@storybook/addon-jest'
+import { withOptions } from '@storybook/addon-options'
 import React from 'react'
 import { createGlobalStyle } from 'styled-components'
+
+import results from '../jest-test-results.json'
 
 const GlobalStyle = createGlobalStyle`
     body {
@@ -9,12 +12,26 @@ const GlobalStyle = createGlobalStyle`
     }
 `
 
-// addDecorator(withInfo)
 
-addDecorator( story => (
+// filesExtension is needed with current version of addon,
+// or else "no test configured" error occures
+addDecorator(
+    withTests({
+        results,
+        filesExt: '.test.js',
+    }),
+)
+
+addDecorator(
+    withOptions({
+        addonPanelInRight: true,
+    }),
+)
+
+addDecorator(story => (
     <>
         <GlobalStyle />
-        { story() }
+        {story()}
     </>
 ))
 

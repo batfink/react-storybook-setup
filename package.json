@@ -7,11 +7,16 @@
     "license": "MIT",
     "private": true,
     "workspaces": [
-        "packages/*"
+        "packages/atoms/*"
     ],
     "scripts": {
+        "prestart": "yarn prebuild:storybook",
         "start": "start-storybook -p 9002",
-        "build": "build-storybook -o docs",
+        "prebuild:storybook": "yarn test:generate-output || true",
+        "build:storybook": "build-storybook -o docs",
+        "clean:components": "lerna run clean",
+        "prebuild:components": "yarn test",
+        "build:components": "npm-run-all \"lerna run clean\" \"lerna run build\"",
         "lerna": "lerna",
         "pub": "lerna publish",
         "clean": "lerna clean",
@@ -19,7 +24,8 @@
         "lint:css": "stylelint \"packages/**/*.jsx\"",
         "test": "jest",
         "test:generate-output": "jest --json --outputFile=jest-test-results.json",
-        "updateSnapshots": "jest --updateSnapshot"
+        "test:watch": "yarn test --watch",
+        "test:updateSnapshots": "jest --updateSnapshot"
     },
     "husky": {
         "hooks": {
@@ -38,14 +44,12 @@
             }
         }
     },
-    "commitlint": {
-        "extends": [
-            "@commitlint/config-conventional"
-        ]
-    },
     "jest": {
         "verbose": true,
-        "setupTestFrameworkScriptFile": "<rootDir>/testSetup.js"
+        "setupTestFrameworkScriptFile": "<rootDir>/testSetup.js",
+        "roots": [
+            "packages/"
+        ]
     },
     "devDependencies": {
         "@babel/core": "^7.1.2",
@@ -55,8 +59,8 @@
         "@babel/preset-react": "^7.0.0",
         "@commitlint/cli": "^7.2.1",
         "@commitlint/config-conventional": "^7.1.2",
-        "@storybook/addon-info": "^4.0.2",
         "@storybook/addon-jest": "^4.0.2",
+        "@storybook/addon-options": "^4.0.4",
         "@storybook/react": "^4.0.2",
         "babel-core": "^7.0.0-bridge.0",
         "babel-eslint": "^10.0.1",
