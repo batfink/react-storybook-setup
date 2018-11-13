@@ -21,6 +21,8 @@ rules:
             - jest-config
             - rollup-config
             - eslint-config
+            - storybook-config
+            - yarn-lock
             - readme
             - foobar
             - barbar
