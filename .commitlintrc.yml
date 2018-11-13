@@ -12,6 +12,7 @@ rules:
         - always
         -
             - release
+            - travis
             - eslint
             - stylelint
             - webpack
