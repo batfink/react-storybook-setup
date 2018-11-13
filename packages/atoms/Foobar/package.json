@@ -24,8 +24,8 @@
     "publishConfig": {
         "access": "public"
     },
-    "repository": [
+    "repository": {
         "type": "git",
         "url": "ssh://git@github.com:batfink/react-storybook-setup"
-    ]
+    }
 }
