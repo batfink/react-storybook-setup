@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
 addDecorator(
     withTests({
         results,
-        filesExt: '.test.js',
+        filesExt: '.test.jsx',
     }),
 )
 
