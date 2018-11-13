@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import Barbar from 'batfink-barbar'
+import PropTypes from 'prop-types'
 
 const Foobar = styled.div`
     display: grid;
@@ -9,6 +11,20 @@ const Foobar = styled.div`
     background: deeppink;
     color: lime;
     border: 1px solid black;
+    padding: 1rem;
 `
 
-export default Foobar
+const Component = ({ children }) => (
+    <Foobar>
+        <Barbar>{ children }</Barbar>
+    </Foobar>
+)
+
+Component.propTypes = {
+    children: PropTypes.oneOfType([
+        PropTypes.element,
+        PropTypes.arrayOf(PropTypes.element),
+    ]).isRequired,
+}
+
+export default Component

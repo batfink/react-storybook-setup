@@ -15,6 +15,8 @@
         "dist"
     ],
     "dependencies": {
+        "batfink-barbar": "^0.1.0",
+        "prop-types": "^15.6.2",
         "styled-components": "^4.0.3"
     },
     "peerDependencies": {
