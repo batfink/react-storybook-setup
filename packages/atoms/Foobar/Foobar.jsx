@@ -6,12 +6,9 @@ const Foobar = styled.div`
     grid-gap: 0.25rem;
     font-weight: 500;
     font-size: 1.125rem;
-
-    .baz {
-        background: orange;
-        color: lime;
-        border: 1px solid black;
-    }
+    background: orange;
+    color: lime;
+    border: 1px solid black;
 `
 
 export default Foobar
