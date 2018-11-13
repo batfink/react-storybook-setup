@@ -2,7 +2,7 @@
     "name": "@batfink/foobar",
     "main": "dist/Foobar.js",
     "module": "Foobar.jsx",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "license": "MIT",
     "scripts": {
         "prepare": "yarn build",
