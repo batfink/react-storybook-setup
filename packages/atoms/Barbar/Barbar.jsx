@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Foobar = styled.div`
+const Barbar = styled.div`
     display: grid;
     grid-gap: 0.25rem;
     font-weight: 500;
@@ -11,4 +11,4 @@ const Foobar = styled.div`
     border: 1px solid black;
 `
 
-export default Foobar
+export default Barbar
