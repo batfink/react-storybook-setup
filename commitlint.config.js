@@ -11,6 +11,7 @@ const config = {
             2,
             'always',
             [
+                'release',
                 'foobar',
             ],
         ],
