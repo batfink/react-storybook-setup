@@ -12,13 +12,14 @@ rules:
         - always
         -
             - release
-            - travis
-            - eslint
-            - stylelint
-            - webpack
-            - babel
-            - commitlint
-            - jest
-            - rollup
+            - travis-config
+            - eslint-config
+            - stylelint-config
+            - webpack-config
+            - babel-config
+            - commitlint-config
+            - jest-config
+            - rollup-config
+            - eslint-config
             - readme
             - foobar
