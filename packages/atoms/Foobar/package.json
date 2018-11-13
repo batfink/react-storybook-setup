@@ -11,7 +11,8 @@
         "build": "npm-run-all clean bundle"
     },
     "files": [
-        "dist/*"
+        "Foobar.jsx",
+        "dist"
     ],
     "dependencies": {
         "styled-components": "^4.0.3"
@@ -23,5 +24,8 @@
     "publishConfig": {
         "access": "public"
     },
-    "repository": "git@github.com:batfink/react-storybook-setup"
+    "repository": [
+        "type": "git",
+        "url": "ssh://git@github.com:batfink/react-storybook-setup"
+    ]
 }

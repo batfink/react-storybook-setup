@@ -10,6 +10,7 @@ const Foobar = styled.div`
     .baz {
         background: orange;
         color: lime;
+        border: 1px solid black;
     }
 `
 
