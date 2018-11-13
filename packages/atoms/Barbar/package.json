@@ -1,0 +1,28 @@
+{
+    "name": "batfink-barbar",
+    "main": "dist/Barbar.js",
+    "module": "Barbar.jsx",
+    "version": "0.0.1",
+    "license": "MIT",
+    "scripts": {
+        "prepare": "yarn build",
+        "clean": "rimraf dist && mkdir dist",
+        "bundle": "rollup -c",
+        "build": "npm-run-all clean bundle"
+    },
+    "files": [
+        "Barbar.jsx",
+        "dist"
+    ],
+    "dependencies": {
+        "styled-components": "^4.0.3"
+    },
+    "peerDependencies": {
+        "react": "^16.6.0",
+        "react-dom": "^16.6.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": "github:batfink/react-storybook-setup"
+}
