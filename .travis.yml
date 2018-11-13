@@ -1,14 +1,15 @@
 language: node_js
 node_js:
-- '10'
+    - '10'
 cache: yarn
 script:
-- yarn lint:js
-- yarn lint:css
-- yarn test
-- commitlint-travis
+    - yarn lint:js
+    - yarn lint:css
+    - yarn test
+    - commitlint-travis
 deploy:
-  provider: npm
+  provider: script
+  script: yarn lerna publish --yes
   email: vnys@statoil.com
   api_key:
     secure: t0CM3xdH6+Q0+/2dvlzrupgjSIKQseKglIoqkm5Enfu5sCB8gTbePKUoupgD4hBzLF3Ss79FMcRINTtV0BdJwZR2YhdYv1z3vZnqBKUB0FWwg65/Vck+kjUF8jxp/v7J9WJS5ksjl6TXBz1PhvvXDxyzNmMLwa2aABKSc0T8OUmWw28J+lVkJKZ/VXFnuHy8ivHCGBdSTUlmEa+aSCj4/RvyHtXREb+hrNgQ8C6UUktyQPKJ3ld7GSaqX7QlZxg7Y7H9/C8t6nPgWgEgFW5hKwvLc743bElQrHHmgyUHOT8+DoI5usHK2Id+rAn4zyZH7xNHdGzuseIftsVaMYbIL9yGFnZxaEmczeVi9W4QJcVkqrArtSOl9NNkbwmBe4gerOnCFYx3YoraPw+1+/IKXZ68E/RJpu6Ill0nTZggq8iYvH4wPQEbbd0CY/3WuMa8XGxr+Vc7HlKSUnxVUwybjzB6shcVwKrO+wTTHyt9UTOGOpaMonsYnfcrPpnIYIfPSCXkP3Nf44pwvaK+IhxykkLHECqAb2TsiVuSFm+8KX4BU98vLXc4cmUKBIWf4HtzRGejw3R6NR2k1wOcgaqsQdy61vJ56qULQkwmpL+OPaY7Tad2+Ait9ARd7gTqZdaAHqa2I4qK49ZckvDxgRNt762PD2eJy1JRsnr21/7/2SY=
