@@ -1,0 +1,23 @@
+extends:
+    - "@commitlint/config-conventional"
+rules:
+    type-empty:
+        - 2
+        - never
+    scope-empty:
+        - 2
+        - never
+    scope-enum:
+        - 2
+        - always
+        -
+            - release
+            - eslint
+            - stylelint
+            - webpack
+            - babel
+            - commitlint
+            - jest
+            - rollup
+            - readme
+            - foobar
