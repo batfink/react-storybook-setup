@@ -21,10 +21,11 @@ const Component = ({ children }) => (
 )
 
 Component.propTypes = {
-    children: PropTypes.oneOfType([
-        PropTypes.element,
-        PropTypes.arrayOf(PropTypes.element),
-    ]).isRequired,
+    children: PropTypes.node,
+}
+
+Component.defaultProps = {
+    children: null,
 }
 
 export default Component
