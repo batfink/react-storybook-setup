@@ -7,6 +7,10 @@ const config = {
             2,
             'never',
         ],
+        'scope-empty': [
+            2,
+            'never',
+        ],
         'scope-enum': [
             2,
             'always',
