@@ -1,19 +1,21 @@
 language: node_js
 node_js:
-    - '10'
+- '10'
 cache: npm
 script:
-    - npm run lint:js
-    - npm run lint:css
-    - npm run test
-    - commitlint-travis
+- npm run lint:js
+- npm run lint:css
+- npm run test
+- commitlint-travis
+env:
+  global:
+    secure: U1DdBB37CPqUzZNbYHb6U7nehNDqsUTlFVnsquSVv7jkJO1YLQEPLMmJU3alOLAmM6jcnthSB5eMSNn9jIT9zNIstAEgA7KZ+qBVaoCHnKZCTCMF7Ubf7wYkofNVKpcmvb7I5+GNsgH6ylYHJ4q2umshIoTo09yGEbJ1DMDzhLs45k+Ns+MDmh0zR9LsFet+8IG2tC7zkioytckc9InxKvf1kCruta9zyZ7TyIpIIswFSF673N6ua2yogvmLlZUbhClrwEdGiOuOKz01lldYPyFNsOe/XmjZxLsjRnQZoVQP22Q+BGcpX8TtHjUXn6w7nJjMpOuq3szifxZGldMbtKqBtKgNXiYG47cQ2R5nNchpyAsdqBDE1qffmPOGPFZoDKw3RXHts6bNKWAHBQKrXDDz0ClKv+jF4YGhUkjZpuH6cr35dyZ8RDCs7FceHQQdRbJ9tjVtcK40iuXoRXVRWIScVfGGR/PLs1ypN0BEzVwYsm4+g/cdJahUG4rkJ6eFVLu7QROKUB4WNjtzu0efQglBXI0f2S4yCU+jUMdKsKS66q8laPWbma16lWlUrCKhwAb27iRZJ6l4mamLt9zwRpwVdgRY/YCbqC9T1ps5tdBykE0J3pecPUvUA0X6H3FwSr6tvQHKopc25Nb76kjJkGvKP2sS1aMYzzBwBMfy5eM=
 deploy:
   skip_cleanup: true
   provider: script
   script: npm run lerna publish --yes
   email: vnys@statoil.com
-  api_key:
-    secure: t0CM3xdH6+Q0+/2dvlzrupgjSIKQseKglIoqkm5Enfu5sCB8gTbePKUoupgD4hBzLF3Ss79FMcRINTtV0BdJwZR2YhdYv1z3vZnqBKUB0FWwg65/Vck+kjUF8jxp/v7J9WJS5ksjl6TXBz1PhvvXDxyzNmMLwa2aABKSc0T8OUmWw28J+lVkJKZ/VXFnuHy8ivHCGBdSTUlmEa+aSCj4/RvyHtXREb+hrNgQ8C6UUktyQPKJ3ld7GSaqX7QlZxg7Y7H9/C8t6nPgWgEgFW5hKwvLc743bElQrHHmgyUHOT8+DoI5usHK2Id+rAn4zyZH7xNHdGzuseIftsVaMYbIL9yGFnZxaEmczeVi9W4QJcVkqrArtSOl9NNkbwmBe4gerOnCFYx3YoraPw+1+/IKXZ68E/RJpu6Ill0nTZggq8iYvH4wPQEbbd0CY/3WuMa8XGxr+Vc7HlKSUnxVUwybjzB6shcVwKrO+wTTHyt9UTOGOpaMonsYnfcrPpnIYIfPSCXkP3Nf44pwvaK+IhxykkLHECqAb2TsiVuSFm+8KX4BU98vLXc4cmUKBIWf4HtzRGejw3R6NR2k1wOcgaqsQdy61vJ56qULQkwmpL+OPaY7Tad2+Ait9ARd7gTqZdaAHqa2I4qK49ZckvDxgRNt762PD2eJy1JRsnr21/7/2SY=
+  api_key: $NPM_TOKEN
   on:
     branch: master
     repo: batfink/react-storybook-setup
