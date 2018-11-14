@@ -24,3 +24,6 @@ steps:
     - script: |
         npm test
       displayName: 'Run tests'
+    - script: |
+        git checkout master
+      displayName: 'Checkout master'
