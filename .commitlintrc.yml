@@ -18,6 +18,7 @@ rules:
             - webpack-config
             - babel-config
             - commitlint-config
+            - gitignore
             - jest-config
             - rollup-config
             - eslint-config
