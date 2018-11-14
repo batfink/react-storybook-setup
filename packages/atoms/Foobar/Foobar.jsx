@@ -8,7 +8,7 @@ const Foobar = styled.div`
     grid-gap: 0.25rem;
     font-weight: 500;
     font-size: 1.125rem;
-    background: deeppink;
+    background: lime;
     color: lime;
     border: 1px solid black;
     padding: 1rem;
