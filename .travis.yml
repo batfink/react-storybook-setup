@@ -3,11 +3,13 @@ node_js:
     - '10'
 cache: yarn
 script:
+    - yarn lerna bootstrap
     - yarn lint:js
     - yarn lint:css
     - yarn test
     - commitlint-travis
 deploy:
+  skip_cleanup: true
   provider: script
   script: yarn lerna publish --yes
   email: vnys@statoil.com
