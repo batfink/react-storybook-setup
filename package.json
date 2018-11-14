@@ -26,9 +26,9 @@
         "lint:js": "eslint --ext js,jsx packages",
         "lint:css": "stylelint \"packages/**/*.jsx\"",
         "test": "jest",
-        "test:generate-output": "jest --json --outputFile=jest-test-results.json",
-        "test:watch": "npm run test --watch",
-        "test:updateSnapshots": "jest --updateSnapshot"
+        "test:generate-output": "npm run test -- --json --outputFile=jest-test-results.json",
+        "test:watch": "npm run test -- --watch",
+        "test:updateSnapshots": "npm test -- -u"
     },
     "husky": {
         "hooks": {

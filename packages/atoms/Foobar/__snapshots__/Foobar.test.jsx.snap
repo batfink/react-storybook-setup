@@ -31,7 +31,7 @@ ShallowWrapper {
       "rendered": null,
       "type": Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "Barbar-sc-3a4mus-0",
           "isStatic": true,
@@ -50,12 +50,12 @@ ShallowWrapper {
     },
     "type": Object {
       "$$typeof": Symbol(react.forward_ref),
-      "attrs": undefined,
+      "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "Foobar-jdw10h-0",
         "isStatic": true,
         "rules": Array [
-          "display:grid;grid-gap:0.25rem;font-weight:500;font-size:1.125rem;background:deeppink;color:lime;border:1px solid black;padding:1rem;",
+          "display:grid;grid-gap:0.25rem;font-weight:500;font-size:1.125rem;background:lime;color:lime;border:1px solid black;padding:1rem;",
         ],
       },
       "displayName": "Foobar",
@@ -87,7 +87,7 @@ ShallowWrapper {
         "rendered": null,
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
-          "attrs": undefined,
+          "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "Barbar-sc-3a4mus-0",
             "isStatic": true,
@@ -106,12 +106,12 @@ ShallowWrapper {
       },
       "type": Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "Foobar-jdw10h-0",
           "isStatic": true,
           "rules": Array [
-            "display:grid;grid-gap:0.25rem;font-weight:500;font-size:1.125rem;background:deeppink;color:lime;border:1px solid black;padding:1rem;",
+            "display:grid;grid-gap:0.25rem;font-weight:500;font-size:1.125rem;background:lime;color:lime;border:1px solid black;padding:1rem;",
           ],
         },
         "displayName": "Foobar",
