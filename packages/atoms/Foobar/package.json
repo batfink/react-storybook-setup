@@ -26,5 +26,6 @@
     "publishConfig": {
         "access": "public"
     },
-    "repository": "github:batfink/react-storybook-setup"
+    "repository": "github:batfink/react-storybook-setup",
+    "gitHead": "2e8ba797bd34bd613b1b02cfda1a3a2399a4afd5"
 }
