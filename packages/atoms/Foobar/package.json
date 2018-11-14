@@ -2,7 +2,7 @@
     "name": "@batfink/foobar",
     "main": "dist/Foobar.js",
     "module": "Foobar.jsx",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "license": "MIT",
     "scripts": {
         "prepare": "yarn build",
@@ -15,7 +15,7 @@
         "dist"
     ],
     "dependencies": {
-        "batfink-barbar": "^0.1.1",
+        "batfink-barbar": "^0.1.2",
         "prop-types": "^15.6.2",
         "styled-components": "^4.0.3"
     },

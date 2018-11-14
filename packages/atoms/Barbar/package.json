@@ -2,7 +2,7 @@
     "name": "batfink-barbar",
     "main": "dist/Barbar.js",
     "module": "Barbar.jsx",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "license": "MIT",
     "scripts": {
         "prepare": "yarn build",
