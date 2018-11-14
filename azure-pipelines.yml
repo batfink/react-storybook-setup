@@ -27,3 +27,6 @@ steps:
     - script: |
         git checkout master
       displayName: 'Checkout master'
+    - script: |
+        npm run lerna publish -- --yes
+      displayName: 'Lerna publish'
