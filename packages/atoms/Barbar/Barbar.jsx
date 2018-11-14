@@ -8,7 +8,7 @@ const Barbar = styled.div`
     font-size: 1.125rem;
     background: maroon;
     color: lime;
-    border: 1px solid black;
+    border: 1px solid orange;
 `
 
 export default Barbar
