@@ -10,10 +10,10 @@
         "packages/atoms/*"
     ],
     "scripts": {
-        "xxxprestart": "npm run prebuild:storybook",
-        "xxxstart": "start-storybook -p 9002",
         "xxxpostinstall": "npm run bootstrap",
         "xxxbootstrap": "lerna bootstrap --no-ci",
+        "xxxprestart": "npm run prebuild:storybook",
+        "start": "start-storybook -p 9002",
         "xxxprebuild:storybook": "npm run test:generate-output || true",
         "build:storybook": "build-storybook -o docs",
         "clean:components": "lerna run clean",
