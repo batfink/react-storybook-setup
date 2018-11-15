@@ -7,17 +7,10 @@ cache:
     directories:
         - "$HOME/.npm"
 before_install:
-    - printf "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
+    .travis/before_install.sh
+    # - printf "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
 script:
     - npm run lint:js
     - npm run lint:css
     - npm run test
-    - commitlint-travis
-deploy:
-    skip_cleanup: true
-    provider: script
-    script: npm run lerna publish --yes
-    email: vnys@statoil.com
-    on:
-        branch: master
-        repo: batfink/react-storybook-setup
+    # - commitlint-travis
