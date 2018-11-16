@@ -3,7 +3,7 @@ node_js:
     - '10'
 install:
     - npm ci
-    - npm install packages/**/*
+    - npm run lerna bootstrap --no-ci
 cache:
     directories:
         - "$HOME/.npm"
@@ -12,7 +12,7 @@ before_install:
     - .travis/before_install.sh
     # - printf "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
 script:
-    - npm run lint:js
-    - npm run lint:css
+    # - npm run lint:js
+    # - npm run lint:css
     - npm run test
     # - commitlint-travis

@@ -10,8 +10,7 @@
         "packages/atoms/*"
     ],
     "scripts": {
-        "xxxpostinstall": "npm run bootstrap",
-        "xxxbootstrap": "lerna bootstrap --no-ci",
+        "postinstall": "lerna bootstrap --no-ci",
         "xxxprestart": "npm run prebuild:storybook",
         "start": "start-storybook -p 9002",
         "xxxprebuild:storybook": "npm run test:generate-output || true",
