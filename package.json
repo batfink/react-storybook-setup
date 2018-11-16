@@ -1,29 +1,19 @@
 {
     "name": "batfink-react-storybook-setup",
-    "version": "1.0.0",
+    "version": "0.0.0-semantic-release",
     "main": "index.js",
     "repository": "git@github.com:batfink/react-storybook-setup",
     "author": "Victor Nystad <vnystad@gmail.com>",
     "license": "MIT",
     "private": true,
-    "workspaces": [
-        "packages/atoms/*"
-    ],
     "scripts": {
-        "postinstall": "lerna bootstrap --no-ci",
-        "semantic-release": "npm-run-all \"lerna-semantic-release pre\" \"lerna-semantic-release post\" \"lerna-semantic-release perform\"",
-        "lerna-semantic-release": "lerna-semantic-release",
         "xxxprestart": "npm run prebuild:storybook",
         "start": "start-storybook -p 9002",
         "xxxprebuild:storybook": "npm run test:generate-output || true",
         "build:storybook": "build-storybook -o docs",
         "clean:components": "lerna run clean",
         "prebuild:components": "npm run test",
-        "build:components": "npm-run-all \"lerna run clean\" \"lerna run build\"",
-        "lerna": "lerna",
         "xxxprepub": "npm-run-all lint:js lint:css test",
-        "pub": "lerna publish",
-        "clean": "lerna clean",
         "lint:js": "eslint --ext js,jsx packages",
         "lint:css": "stylelint \"packages/**/*.jsx\"",
         "test": "jest",
@@ -31,26 +21,6 @@
         "test:watch": "npm run test -- --watch",
         "test:updateSnapshots": "npm test -- -u",
         "commit": "git-cz"
-    },
-    "lerna": {
-        "version": "independent",
-        "npmClient": "npm",
-        "hoist": true,
-        "packages": [
-            "packages/atoms/*"
-        ],
-        "command": {
-            "publish": {
-                "conventionalCommits": true,
-                "allowBranch": "master",
-                "message": "chore(release): publish"
-            },
-            "bootstrap": {
-                "npmClientArgs": [
-                    "--no-package-lock"
-                ]
-            }
-        }
     },
     "jest": {
         "verbose": true,
