@@ -13,7 +13,7 @@
         "postinstall": "lerna bootstrap --no-ci",
         "semantic-release": "npm-run-all \"lerna-semantic-release pre\" \"lerna-semantic-release post\" \"lerna-semantic-release perform\"",
         "precommit": "npm-run-all lint:js lint:css",
-        "prepush": "npm-run-all precomit test",
+        "prepush": "npm-run-all precommit test",
         "xxxprestart": "npm run prebuild:storybook",
         "start": "start-storybook -p 9002",
         "xxxprebuild:storybook": "npm run test:generate-output || true",
