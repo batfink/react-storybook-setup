@@ -11,8 +11,11 @@ before_install:
     - chmod +x .travis/before_install.sh
     - .travis/before_install.sh
     # - printf "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
+after_success:
+    - chmod +x .travis/after_success.sh
+    - .travis/after_success.sh
 script:
     # - npm run lint:js
     # - npm run lint:css
-    - npm run test
+    # - npm run test
     # - commitlint-travis
