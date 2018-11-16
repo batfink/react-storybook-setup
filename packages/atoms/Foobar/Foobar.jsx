@@ -10,7 +10,7 @@ const Foobar = styled.div`
     font-size: 1.125rem;
     background: lime;
     color: lime;
-    border: 1px solid violet;
+    border: 1px solid orange;
     padding: 1rem;
 `
 
