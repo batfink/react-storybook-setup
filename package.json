@@ -10,6 +10,7 @@
         "packages/atoms/*"
     ],
     "scripts": {
+        "delete:node_modules": "bash bin/delete-node_modules.sh",
         "postinstall": "lerna exec -- npm install --no-package-lock",
         "semantic-release": "npm-run-all \"lerna-semantic-release pre\" \"lerna-semantic-release post\" \"lerna-semantic-release perform\"",
         "lerna-semantic-release": "lerna-semantic-release",
