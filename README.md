@@ -22,3 +22,5 @@ Depencencies
 ------------
 
 Common dependencies are installed in the root package.json, and pointed to in the individual modules package.jsons using relative file: specifiers. These get symlinked during npm installed, and during deployment the version number gets pulled from the root package.json.
+
+We use lerna to run tasks across multiple packages, but do not use other functionalities.
