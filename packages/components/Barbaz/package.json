@@ -1,0 +1,29 @@
+{
+    "name": "batfink-barbaz",
+    "main": "dist/Barbaz.js",
+    "module": "Barbaz.jsx",
+    "version": "0.0.0-semantic-release",
+    "license": "MIT",
+    "scripts": {
+        "prepare": "npm build",
+        "clean": "rimraf dist && mkdir dist",
+        "bundle": "rollup -c",
+        "build": "npm-run-all clean bundle"
+    },
+    "files": [
+        "Barbaz.jsx",
+        "dist"
+    ],
+    "dependencies": {
+        "batfink-bazar": "file:../Bazar",
+        "styled-components": "file:../../../node_modules/styled-components"
+    },
+    "peerDependencies": {
+        "react": "file:../../../node_modules/react",
+        "react-dom": "file:../../../node_modules/react-dom"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": "github:batfink/react-storybook-setup"
+}

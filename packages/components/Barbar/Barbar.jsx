@@ -6,9 +6,9 @@ const Barbar = styled.div`
     grid-gap: 0.25rem;
     font-weight: 500;
     font-size: 1.125rem;
-    background: maroon;
-    color: lime;
-    border: 1px solid orange;
+    background: yellow;
+    color: gray;
+    border: 1px solid black;
 `
 
 export default Barbar

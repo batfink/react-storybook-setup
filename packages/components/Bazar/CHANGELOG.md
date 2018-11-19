@@ -3,25 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [1.0.10](https://github.com/batfink/react-storybook-setup/compare/@batfink/foobar@1.0.9...@batfink/foobar@1.0.10) (2018-11-14)
-
-**Note:** Version bump only for package @batfink/foobar
+## [0.1.2](https://github.com/batfink/react-storybook-setup/compare/batfink-barbar@0.1.1...batfink-barbar@0.1.2) (2018-11-14)
 
 
+### Bug Fixes
 
-
-
-## [1.0.9](https://github.com/batfink/react-storybook-setup/compare/@batfink/foobar@1.0.8...@batfink/foobar@1.0.9) (2018-11-13)
-
-**Note:** Version bump only for package @batfink/foobar
+* **barbar:** rename const ([2f7d198](https://github.com/batfink/react-storybook-setup/commit/2f7d198))
 
 
 
 
 
-## [1.0.8](https://github.com/batfink/react-storybook-setup/compare/@batfink/foobar@1.0.7...@batfink/foobar@1.0.8) (2018-11-13)
+## [0.1.1](https://github.com/batfink/react-storybook-setup/compare/batfink-barbar@0.1.0...batfink-barbar@0.1.1) (2018-11-13)
 
-**Note:** Version bump only for package @batfink/foobar
+**Note:** Version bump only for package batfink-barbar
+
+
+
+
+
+# 0.1.0 (2018-11-13)
+
+
+### Features
+
+* **barbar:** add barbar module ([5fad6ba](https://github.com/batfink/react-storybook-setup/commit/5fad6ba))
 
 
 

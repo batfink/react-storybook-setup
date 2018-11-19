@@ -17,3 +17,8 @@ If a snapshot test fails because you've changed something, type "u" to update th
 
 - https://github.com/storybooks/storybook/tree/master/addons/storyshots/storyshots-core
 - https://codeburst.io/build-your-own-react-component-library-with-lerna-and-storybook-53298b186760
+
+Depencencies
+------------
+
+Common dependencies are installed in the root package.json, and pointed to in the individual modules package.jsons using relative file: specifiers. These get symlinked during npm installed, and during deployment the version number gets pulled from the root package.json.

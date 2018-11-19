@@ -2,16 +2,16 @@ import React from 'react'
 import Enzyme from 'enzyme'
 import 'jest-styled-components'
 import styled from 'styled-components'
-import Foobar from './Foobar'
+import Barbaz from './Barbaz'
 
 const { shallow, mount } = Enzyme
 
 test('it matches snapshot', () => {
-    const wrapper = shallow(<Foobar />)
+    const wrapper = shallow(<Barbaz />)
     expect(wrapper).toMatchSnapshot()
 })
 
 test('it matches style rule', () => {
-    const wrapper = mount(<Foobar />)
+    const wrapper = mount(<Barbaz />)
     expect(wrapper).toHaveStyleRule('display', 'grid')
 })

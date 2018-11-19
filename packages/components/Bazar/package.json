@@ -1,25 +1,25 @@
 {
-    "name": "batfink-barbar",
-    "main": "dist/Barbar.js",
-    "module": "Barbar.jsx",
-    "version": "0.1.2",
+    "name": "batfink-bazar",
+    "main": "dist/Bazar.js",
+    "module": "Bazar.jsx",
+    "version": "0.0.0-semantic-release",
     "license": "MIT",
     "scripts": {
-        "prepare": "npm run build",
+        "prepare": "npm build",
         "clean": "rimraf dist && mkdir dist",
         "bundle": "rollup -c",
         "build": "npm-run-all clean bundle"
     },
     "files": [
-        "Barbar.jsx",
+        "Bazar.jsx",
         "dist"
     ],
     "dependencies": {
-        "styled-components": "^4.0.3"
+        "styled-components": "file:../../../node_modules/styled-components"
     },
     "peerDependencies": {
-        "react": "^16.6.0",
-        "react-dom": "^16.6.0"
+        "react": "file:../../../node_modules/react",
+        "react-dom": "file:../../../node_modules/react-dom"
     },
     "publishConfig": {
         "access": "public"
