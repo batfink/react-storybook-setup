@@ -24,7 +24,7 @@ ShallowWrapper {
           "componentId": "Barbar-sc-3a4mus-0",
           "isStatic": true,
           "rules": Array [
-            "display:grid;grid-gap:0.25rem;font-weight:500;font-size:1.125rem;background:orange;color:gray;border:1px solid black;",
+            "display:grid;grid-gap:0.25rem;font-weight:500;font-size:1.125rem;background:yellow;color:gray;border:1px solid black;",
           ],
         },
         "displayName": "Barbar",
@@ -54,7 +54,7 @@ ShallowWrapper {
             "componentId": "Barbar-sc-3a4mus-0",
             "isStatic": true,
             "rules": Array [
-              "display:grid;grid-gap:0.25rem;font-weight:500;font-size:1.125rem;background:orange;color:gray;border:1px solid black;",
+              "display:grid;grid-gap:0.25rem;font-weight:500;font-size:1.125rem;background:yellow;color:gray;border:1px solid black;",
             ],
           },
           "displayName": "Barbar",
