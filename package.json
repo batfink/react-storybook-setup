@@ -6,9 +6,6 @@
     "author": "Victor Nystad <vnystad@gmail.com>",
     "license": "MIT",
     "private": true,
-    "workspaces": [
-        "packages/atoms/*"
-    ],
     "scripts": {
         "delete:node_modules": "bash bin/delete-node_modules.sh",
         "postinstall": "lerna exec -- npm install --no-package-lock",
@@ -24,7 +21,7 @@
         "test:generate-output": "npm run test -- --json --outputFile=jest-test-results.json",
         "test:watch": "npm run test -- --watch",
         "test:updateSnapshots": "npm test -- -u",
-        "semantic-release": "semantic-release -e semantic-release-monorepo"
+        "semantic-release": "lerna exec --concurrency 1 -- semantic-release -e semantic-release-monorepo"
     },
     "husky": {
         "hooks": {

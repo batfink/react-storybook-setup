@@ -26,6 +26,6 @@ rules:
             - package.json
             - setup
             - readme
-            - barbar
-            - barbaz
-            - bazar
+            - batfink-barbar
+            - batfink-barbaz
+            - batfink-bazar
