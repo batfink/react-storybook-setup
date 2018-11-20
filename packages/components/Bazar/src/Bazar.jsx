@@ -8,7 +8,7 @@ const Bazar = styled.div`
     font-size: 1.125rem;
     background: deeppink;
     color: lime;
-    border: 1px solid orange;
+    border: 1px solid teal;
 `
 
 export default Bazar
