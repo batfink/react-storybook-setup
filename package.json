@@ -105,10 +105,5 @@
     },
     "engines": {
         "yarn": "NO LONGER USED - Please use npm"
-    },
-    "config": {
-        "commitizen": {
-            "path": "./node_modules/cz-lerna-changelog"
-        }
     }
 }
