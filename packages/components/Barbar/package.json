@@ -1,7 +1,7 @@
 {
     "name": "batfink-barbar",
     "main": "dist/Barbar.js",
-    "module": "Barbar.jsx",
+    "module": "src/Barbar.jsx",
     "version": "0.0.0-semantic-release",
     "license": "MIT",
     "scripts": {
@@ -11,7 +11,7 @@
         "build": "npm-run-all clean bundle"
     },
     "files": [
-        "Barbar.jsx",
+        "src/Barbar.jsx",
         "dist"
     ],
     "dependencies": {

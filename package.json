@@ -25,6 +25,11 @@
         "test:watch": "npm run test -- --watch",
         "test:updateSnapshots": "npm test -- -u"
     },
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
     "lerna": {
         "version": "independent",
         "npmClient": "npm",

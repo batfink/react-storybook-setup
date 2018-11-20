@@ -21,7 +21,7 @@ ShallowWrapper {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Bazar-sc-18dh0hj-0",
+          "componentId": "Bazar-sc-2zw3c5-0",
           "isStatic": true,
           "rules": Array [
             "display:grid;grid-gap:0.25rem;font-weight:500;font-size:1.125rem;background:deeppink;color:lime;border:1px solid orange;",
@@ -29,7 +29,7 @@ ShallowWrapper {
         },
         "displayName": "Bazar",
         "render": [Function],
-        "styledComponentId": "Bazar-sc-18dh0hj-0",
+        "styledComponentId": "Bazar-sc-2zw3c5-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -51,7 +51,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Bazar-sc-18dh0hj-0",
+            "componentId": "Bazar-sc-2zw3c5-0",
             "isStatic": true,
             "rules": Array [
               "display:grid;grid-gap:0.25rem;font-weight:500;font-size:1.125rem;background:deeppink;color:lime;border:1px solid orange;",
@@ -59,7 +59,7 @@ ShallowWrapper {
           },
           "displayName": "Bazar",
           "render": [Function],
-          "styledComponentId": "Bazar-sc-18dh0hj-0",
+          "styledComponentId": "Bazar-sc-2zw3c5-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],

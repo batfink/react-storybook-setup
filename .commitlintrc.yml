@@ -12,18 +12,20 @@ rules:
         - always
         -
             - release
-            - travis-config
-            - eslint-config
-            - stylelint-config
-            - webpack-config
-            - babel-config
-            - commitlint-config
+            - travis
+            - eslint
+            - stylelint
+            - webpack
+            - babel
+            - commitlint
             - gitignore
-            - jest-config
-            - rollup-config
-            - eslint-config
-            - storybook-config
-            - yarn-lock
+            - jest
+            - rollup
+            - eslint
+            - storybook
+            - package.json
+            - setup
             - readme
-            - foobar
             - barbar
+            - barbaz
+            - bazar

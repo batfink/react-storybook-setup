@@ -1,7 +1,7 @@
 {
     "name": "batfink-bazar",
     "main": "dist/Bazar.js",
-    "module": "Bazar.jsx",
+    "module": "src/Bazar.jsx",
     "version": "0.0.0-semantic-release",
     "license": "MIT",
     "scripts": {
@@ -11,7 +11,7 @@
         "build": "npm-run-all clean bundle"
     },
     "files": [
-        "Bazar.jsx",
+        "src/Bazar.jsx",
         "dist"
     ],
     "dependencies": {
