@@ -103,7 +103,7 @@
         "monorepo": {
             "analyzeCommits": "semantic-release-conventional-commits"
         },
-        "dryRun": true
+        "dryRun": false
     },
     "resolutions": {
         "babel-core": "7.0.0-bridge.0"
