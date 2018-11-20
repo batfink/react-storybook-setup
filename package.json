@@ -23,7 +23,8 @@
         "test": "jest",
         "test:generate-output": "npm run test -- --json --outputFile=jest-test-results.json",
         "test:watch": "npm run test -- --watch",
-        "test:updateSnapshots": "npm test -- -u"
+        "test:updateSnapshots": "npm test -- -u",
+        "semantic-release": "semantic-release -e semantic-release-monorepo"
     },
     "husky": {
         "hooks": {
@@ -99,6 +100,10 @@
         "stylelint-custom-processor-loader": "^0.5.0",
         "stylelint-processor-styled-components": "^1.5.0",
         "travis-ci": "^2.2.0"
+    },
+    "release": {
+        "monorepo": {},
+        "dryRun": true
     },
     "resolutions": {
         "babel-core": "7.0.0-bridge.0"
