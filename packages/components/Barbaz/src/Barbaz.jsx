@@ -8,7 +8,7 @@ const Barbaz = styled.div`
     font-size: 1.125rem;
     background: maroon;
     color: lime;
-    border: 1px solid yellow;
+    border: 1px solid lime;
 `
 
 export default Barbaz
