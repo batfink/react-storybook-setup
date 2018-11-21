@@ -104,7 +104,12 @@
     },
     "release": {
         "monorepo": {
-            "analyzeCommits": "semantic-release-conventional-commits"
+            "analyzeCommits": "semantic-release-conventional-commits",
+            "prepare": [
+                "@semantic-release/changelog",
+                "@semantic-release/npm",
+                "@semantic-release/git"
+            ]
         },
         "dryRun": false
     },
