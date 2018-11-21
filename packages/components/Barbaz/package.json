@@ -16,11 +16,11 @@
     ],
     "dependencies": {
         "batfink-bazar": "file:../Bazar",
-        "styled-components": "file:../../../node_modules/styled-components"
+        "styled-components": "^4.1.1"
     },
     "peerDependencies": {
-        "react": "file:../../../node_modules/react",
-        "react-dom": "file:../../../node_modules/react-dom"
+        "react": "^16.6.0",
+        "react-dom": "^16.6.0"
     },
     "publishConfig": {
         "access": "public"

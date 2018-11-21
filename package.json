@@ -8,7 +8,9 @@
     "private": true,
     "scripts": {
         "delete:node_modules": "bash bin/delete-node_modules.sh",
-        "postinstall": "lerna exec -- npm install --no-package-lock",
+        "xxxxpostinstall": "lerna link convert",
+        "xxxpostinstall": "lerna exec -- npm install --no-package-lock",
+        "link": "lerna link convert",
         "start": "start-storybook -p 9999",
         "build:storybook": "build-storybook -o docs",
         "clean:components": "lerna run clean",
@@ -52,6 +54,7 @@
         "@commitlint/cli": "^7.2.1",
         "@commitlint/config-conventional": "^7.1.2",
         "@commitlint/travis-cli": "^7.2.1",
+        "@semantic-release/changelog": "^3.0.1",
         "@storybook/addon-jest": "^4.0.2",
         "@storybook/addon-options": "^4.0.4",
         "@storybook/react": "^4.0.2",
@@ -110,5 +113,9 @@
     },
     "engines": {
         "yarn": "NO LONGER USED - Please use npm"
+    },
+    "dependencies": {
+        "batfink-barbaz": "file:packages/components/Barbaz",
+        "batfink-bazar": "file:packages/components/Bazar"
     }
 }
