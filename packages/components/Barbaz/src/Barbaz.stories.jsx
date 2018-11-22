@@ -25,6 +25,6 @@ stories
             <div>
                 <Barbaz>Some text</Barbaz>
                 <Bazar>Some more text</Bazar>
-            </div>           
+            </div>
         </>
     ))

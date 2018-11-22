@@ -2,7 +2,7 @@ language: node_js
 node_js:
     - '10'
 install:
-    - npm install
+    - npm ci
 cache:
     directories:
         - "$HOME/.npm"
@@ -14,7 +14,7 @@ after_success:
     - chmod +x .travis/after_success.sh
     - .travis/after_success.sh
 script:
-    # - npm run lint:js
-    # - npm run lint:css
-    # - npm run test
-    # - commitlint-travis
+    - npm run lint:js
+    - npm run lint:css
+    - npm run test
+    - commitlint-travis

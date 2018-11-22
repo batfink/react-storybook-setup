@@ -7,18 +7,12 @@
     "license": "MIT",
     "private": true,
     "scripts": {
-        "rm-nodemodules:components": "bash bin/delete-node_modules.sh",
-        "rm-nm": "rimraf node_modules",
-        "xxxxpostinstall": "lerna link convert",
-        "install-nodemodules:components": "lerna exec npm install --no-package-lock",
-        "postinstall": "lerna exec npm install --no-package-lock",
-        "link:components": "lerna link convert",
+        "components:delete-nodemodules": "bash bin/delete-node_modules.sh",
+        "components:install-deps": "lerna exec npm install --no-package-lock",
+        "components:delete-dist": "lerna exec npm run clean",
+        "components:build": "lerna exec npm run build",
         "start": "start-storybook -p 9999",
         "build:storybook": "build-storybook -o docs",
-        "clean:components": "lerna exec npm run clean",
-        "install:components": "lerna exec -- npm install --no-package.lock",
-        "prebuild:components": "npm run test",
-        "build:components": "npm-run-all \"lerna run clean\" \"lerna run build\"",
         "lerna": "lerna",
         "lint:js": "eslint --ext js,jsx packages",
         "lint:css": "stylelint \"packages/**/*.jsx\"",
@@ -28,7 +22,8 @@
         "test:updateSnapshots": "npm test -- -u",
         "semantic-release": "lerna exec --concurrency 1 -- semantic-release -e semantic-release-monorepo",
         "update-dependencies": "ncu -u",
-        "update-dependencies:components": "lerna exec npm run update-dependencies"
+        "update-dependencies:components": "lerna exec npm run update-dependencies",
+        "prepush": "npm-run-all lint:js lint:css"
     },
     "husky": {
         "hooks": {
