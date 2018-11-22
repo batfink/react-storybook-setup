@@ -24,7 +24,7 @@ ShallowWrapper {
           "componentId": "Bazar-sc-2zw3c5-0",
           "isStatic": true,
           "rules": Array [
-            "display:grid;grid-gap:0.25rem;font-weight:500;font-size:1.125rem;background:orange;color:lime;border:1px solid teal;",
+            "display:grid;grid-gap:0.25rem;font-weight:500;font-size:1.125rem;background:lime;color:orange;border:1px solid teal;",
           ],
         },
         "displayName": "Bazar",
@@ -54,7 +54,7 @@ ShallowWrapper {
             "componentId": "Bazar-sc-2zw3c5-0",
             "isStatic": true,
             "rules": Array [
-              "display:grid;grid-gap:0.25rem;font-weight:500;font-size:1.125rem;background:orange;color:lime;border:1px solid teal;",
+              "display:grid;grid-gap:0.25rem;font-weight:500;font-size:1.125rem;background:lime;color:orange;border:1px solid teal;",
             ],
           },
           "displayName": "Bazar",
