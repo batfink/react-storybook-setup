@@ -6,7 +6,7 @@ const Bazar = styled.div`
     grid-gap: 0.25rem;
     font-weight: 500;
     font-size: 1.125rem;
-    background: lime;
+    background: orange;
     color: orange;
     border: 1px solid teal;
 `
