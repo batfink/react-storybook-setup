@@ -22,12 +22,12 @@
         "test:updateSnapshots": "npm test -- -u",
         "semantic-release": "lerna exec --concurrency 1 -- semantic-release -e semantic-release-monorepo",
         "update-dependencies": "ncu -u",
-        "update-dependencies:components": "lerna exec npm run update-dependencies",
-        "prepush": "npm-run-all lint:js lint:css"
+        "update-dependencies:components": "lerna exec npm run update-dependencies"
     },
     "husky": {
         "hooks": {
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+            "pre-push": "npm-run-all lint:js lint:css"
         }
     },
     "lerna": {
