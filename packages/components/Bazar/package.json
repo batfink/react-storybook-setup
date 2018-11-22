@@ -8,7 +8,8 @@
         "prepare": "npm run build",
         "clean": "rimraf dist && mkdir dist",
         "bundle": "rollup -c",
-        "build": "npm-run-all clean bundle"
+        "build": "npm-run-all clean bundle",
+        "update-dependencies": "ncu -u"
     },
     "files": [
         "src/Bazar.jsx",

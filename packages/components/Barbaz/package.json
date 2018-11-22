@@ -8,14 +8,15 @@
         "prepare": "npm run build",
         "clean": "rimraf dist && mkdir dist",
         "bundle": "rollup -c",
-        "build": "npm-run-all clean bundle"
+        "build": "npm-run-all clean bundle",
+        "update-dependencies": "ncu -u"
     },
     "files": [
         "src/Barbaz.jsx",
         "dist"
     ],
     "dependencies": {
-        "batfink-bazar": "file:../Bazar",
+        "batfink-bazar": "^2.1.0",
         "styled-components": "^4.1.1"
     },
     "peerDependencies": {
