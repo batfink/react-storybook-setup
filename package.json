@@ -11,7 +11,7 @@
         "rm-nm": "rimraf node_modules",
         "xxxxpostinstall": "lerna link convert",
         "install-nodemodules:components": "lerna exec npm install --no-package-lock",
-        "xxxpostinstall": "lerna exec npm install --no-package-lock",
+        "postinstall": "lerna exec npm install --no-package-lock",
         "link:components": "lerna link convert",
         "start": "start-storybook -p 9999",
         "build:storybook": "build-storybook -o docs",
