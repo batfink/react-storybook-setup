@@ -6,7 +6,7 @@ const Barbaz = styled.div`
     grid-gap: 0.25rem;
     font-weight: 500;
     font-size: 1.125rem;
-    background: maroon;
+    background: deeppink;
     color: lime;
     border: 1px solid lime;
 `
